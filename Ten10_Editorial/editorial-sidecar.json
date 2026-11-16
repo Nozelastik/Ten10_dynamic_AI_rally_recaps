@@ -1,0 +1,17 @@
+
+{
+  "version": 1,
+  "updatedAt": null,
+  "categories": {
+    "WRC2": {
+      "events": [],
+      "storylines": [],
+      "editorialHistory": []
+    },
+    "JWRC": {
+      "events": [],
+      "storylines": [],
+      "editorialHistory": []
+    }
+  }
+}
