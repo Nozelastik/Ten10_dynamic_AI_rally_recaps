@@ -2,19 +2,19 @@
   "version": 1,
   "latest": {
     "season": "Season 5",
-    "round": "R4 Croatia",
-    "roundName": "Croatia",
-    "roundCode": "CR",
+    "round": "R5 Portugal",
+    "roundName": "Portugal",
+    "roundCode": "PO",
     "category": "JWRC",
-    "headline": "scagliox01 Triumphs in Croatia",
-    "paragraph": "In the fourth round of Season 5 in Croatia, scagliox01 secured a dominant JWRC victory by finishing with a total time of 00:49:39.429. With three stage wins throughout the event, scagliox01 claimed 35 points, finishing ahead of Flinnowaty, who took second place and earned 31 total points. Cefa217 rounded out the podium in third, securing 29 points while performing well on the final stage. Despite recording four stage wins, SubaruNyx finished eleventh overall after penalties, though they still managed to secure maximum points in the Power Stage.",
-    "angle": "Dominant victory",
-    "generatedAt": "2026-11-16T21:53:29.225Z",
-    "winner": "scagliox01",
+    "headline": "SubaruNyx Commands Portugal with Six Stage Wins",
+    "paragraph": "SubaruNyx delivered a masterclass in Portugal, securing a dominant victory by winning six of the eight stages. Despite finishing fourth in the final stage, the overall performance was unmatched, resulting in a total time of 01:03:34.693 and 37 points. Cefa217 claimed second place and the Power Stage win, while scagliox01 rounded out the podium. This win marks the second victory of the season for SubaruNyx following their success in Mexico. The event saw five drivers record DNFs, highlighting the challenging nature of the Portuguese stages for the field.",
+    "angle": "Dominant win",
+    "generatedAt": "2026-11-16T21:54:00.302Z",
+    "winner": "SubaruNyx",
     "podium": [
-      "scagliox01",
-      "Flinnowaty",
-      "Cefa217"
+      "SubaruNyx",
+      "Cefa217",
+      "scagliox01"
     ]
   }
 }

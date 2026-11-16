@@ -2,19 +2,19 @@
   "version": 1,
   "latest": {
     "season": "Season 5",
-    "round": "R4 Croatia",
-    "roundName": "Croatia",
-    "roundCode": "CR",
+    "round": "R5 Portugal",
+    "roundName": "Portugal",
+    "roundCode": "PO",
     "category": "WRC2",
-    "headline": "StoryVS_TTV Extends Unbeaten Run with Perfect Croatia Performance",
-    "paragraph": "StoryVS_TTV continued their flawless start to Season 5 by securing another commanding victory in Croatia. The Hyundai i20 N Rally2 driver was untouchable across all seven stages, marking a perfect weekend that keeps their winning streak alive. GTI_1990 maintained consistent pace to claim second place overall, finishing forty-four seconds behind the leader. Meanwhile, Tuinboon27 rounded out the podium despite a five-second penalty on stage four. With thirty points added to their tally, StoryVS_TTV further solidified their standing at the top of the leaderboard after yet another display of absolute dominance.",
-    "angle": "Dominant winning streak",
-    "generatedAt": "2026-11-16T21:53:27.130Z",
+    "headline": "StoryVS_TTV Extends Unbeaten Run in Portugal",
+    "paragraph": "StoryVS_TTV continued their flawless start to Season 5 by securing victory at the Rally Portugal. Despite a 5000ms penalty on stage four, the Hyundai driver maintained control by winning seven of the eight stages to finish with an overall time of 01:00:25.317. GTI_1990 kept the pressure on throughout the event to secure second place, backed by a strong performance in the Power Stage. Meanwhile, Tuinboon27 demonstrated resilience, claiming victory in the final stage to bolster their points tally despite earlier time penalties, rounding out a challenging weekend for the WRC2 field.",
+    "angle": "Continued dominance",
+    "generatedAt": "2026-11-16T21:53:57.470Z",
     "winner": "StoryVS_TTV",
     "podium": [
       "StoryVS_TTV",
       "GTI_1990",
-      "Tuinboon27"
+      "Janeman13"
     ]
   }
 }
