@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T21:57:43.104Z",
+  "updatedAt": "2026-11-16T22:03:30.520Z",
   "categories": {
     "WRC2": {
       "events": [
@@ -949,7 +949,7 @@
           "folder": "R7 Estonia",
           "round": "Estonia",
           "roundCode": "ES",
-          "processedAt": "2026-11-16T21:57:40.732Z",
+          "processedAt": "2026-11-16T22:03:24.545Z",
           "winner": "GTI_1990",
           "podium": [
             "GTI_1990",
@@ -1130,10 +1130,13 @@
         }
       ],
       "storylines": [
+        "GTI_1990 secured his first victory of Season 5 in Estonia, ending the winning streak of StoryVS_TTV.",
+        "StoryVS_TTV received a time penalty on stage five, finishing eighth despite winning five stages.",
+        "Janeman13 and speeedhunterr joined GTI_1990 on the podium in Estonia.",
+        "mk6pinnock and Colesy3456 recorded DNFs during the Estonia rally.",
         "GTI_1990 secured their first win of Season 5 in Estonia, ending the winning streak of StoryVS_TTV.",
         "StoryVS_TTV received a time penalty on stage five, ultimately finishing eighth overall despite winning five stages.",
         "Janeman13 and speeedhunterr joined the podium in Estonia.",
-        "mk6pinnock and Colesy3456 recorded DNFs during the Estonia rally.",
         "StoryVS_TTV remains undefeated in Season 5 after winning in Portugal.",
         "GTI_1990 finished second in Portugal, continuing their consistent podium streak.",
         "Tuinboon27 won the final Power Stage in Portugal.",
@@ -1191,6 +1194,13 @@
           "headline": "GTI_1990 Breaks The Streak in Estonia",
           "angle": "First win of the season",
           "generatedAt": "2026-11-16T21:57:40.732Z"
+        },
+        {
+          "season": "Season 5",
+          "round": "R7 Estonia",
+          "headline": "GTI_1990 Breaks Through with Maiden Season 5 Victory in Estonia",
+          "angle": "First win of the season",
+          "generatedAt": "2026-11-16T22:03:24.545Z"
         }
       ]
     },
@@ -2669,7 +2679,7 @@
           "folder": "R7 Estonia",
           "round": "Estonia",
           "roundCode": "ES",
-          "processedAt": "2026-11-16T21:57:43.102Z",
+          "processedAt": "2026-11-16T22:03:30.519Z",
           "winner": "scagliox01",
           "podium": [
             "scagliox01",
@@ -2994,6 +3004,11 @@
         }
       ],
       "storylines": [
+        "scagliox01 increases his career wins to three after his victory in Estonia",
+        "SubaruNyx remains in title contention despite penalties by securing four stage wins",
+        "Flinnowaty maintains his momentum with a second-place finish and 30 points",
+        "Cefa217 demonstrates significant speed by winning the Power Stage despite his DNF",
+        "Four drivers recorded a DNF during the Estonian event",
         "scagliox01 increases their career wins to three after Estonia success",
         "SubaruNyx remains in title contention with four stage wins in Estonia",
         "Cefa217 demonstrates speed with a Power Stage win despite a DNF",
@@ -3057,6 +3072,13 @@
           "headline": "scagliox01 Claims Estonia Victory with Tactical Consistency",
           "angle": "Consistency and points accumulation",
           "generatedAt": "2026-11-16T21:57:43.102Z"
+        },
+        {
+          "season": "Season 5",
+          "round": "R7 Estonia",
+          "headline": "scagliox01 Claims Victory in Estonian Thriller",
+          "angle": "Consistency versus raw pace",
+          "generatedAt": "2026-11-16T22:03:30.519Z"
         }
       ]
     }
