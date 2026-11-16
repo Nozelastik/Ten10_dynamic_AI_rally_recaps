@@ -2,19 +2,19 @@
   "version": 1,
   "latest": {
     "season": "Season 5",
-    "round": "R2 Sweden",
-    "roundName": "Sweden",
-    "roundCode": "SW",
+    "round": "R3 Mexico",
+    "roundName": "Mexico",
+    "roundCode": "ME",
     "category": "WRC2",
-    "headline": "StoryVS_TTV Dominates Sweden with Masterclass Performance",
-    "paragraph": "StoryVS_TTV delivered an commanding performance in the WRC2 category at the Sweden event, securing a total of six stage wins out of ten. Finishing with a time of 00:42:23.385, they claimed the top spot on the podium and maximum points. GTI_1990 followed in second place with three stage wins, while Tuinboon27 rounded out the top three. The event saw consistent competition, although only Colesy3456 failed to complete the full distance, resulting in a DNF. StoryVS_TTV’s tactical consistency and pace proved insurmountable for the remainder of the field throughout the rally.",
-    "angle": "Dominant victory",
-    "generatedAt": "2026-11-16T21:49:59.818Z",
+    "headline": "StoryVS_TTV Extends Mastery in Mexico",
+    "paragraph": "StoryVS_TTV produced an impeccable performance at the Mexico round, securing a perfect record with wins on all six stages. Completing the rally in 00:51:41.991, they comfortably claimed the top step of the podium ahead of GTI_1990, who finished second, and Janeman13, who rounded out the top three. While the field faced various penalties and technical setbacks throughout the six stages, the leader remained unchallenged throughout the event. This clean sweep of stage victories marks a significant display of consistency for the Hyundai driver as they continue their campaign in the WRC2 category.",
+    "angle": "Clean sweep victory",
+    "generatedAt": "2026-11-16T21:50:55.063Z",
     "winner": "StoryVS_TTV",
     "podium": [
       "StoryVS_TTV",
       "GTI_1990",
-      "Tuinboon27"
+      "Janeman13"
     ]
   }
 }

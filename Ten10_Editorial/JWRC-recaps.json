@@ -2,19 +2,19 @@
   "version": 1,
   "latest": {
     "season": "Season 5",
-    "round": "R2 Sweden",
-    "roundName": "Sweden",
-    "roundCode": "SW",
+    "round": "R3 Mexico",
+    "roundName": "Mexico",
+    "roundCode": "ME",
     "category": "JWRC",
-    "headline": "scagliox01 Claims Dominant Victory in Sweden",
-    "paragraph": "scagliox01 secured a commanding victory at the Sweden rally, finishing the ten-stage event with a total time of 00:45:30.821. Dominating the field with three stage wins, scagliox01 accrued 39 points in total, including 4 points from the final power stage. E69Korrea maintained consistency to secure second place, while volos72 rounded out the podium. Despite volos72 taking the maximum 5 points on the power stage, scagliox01 held a clear advantage throughout the weekend. The rally saw 30 entries, with novagsi20 being the only driver recorded with a DNF during the event.",
-    "angle": "Dominant victory",
-    "generatedAt": "2026-11-16T21:50:06.177Z",
-    "winner": "scagliox01",
+    "headline": "SubaruNyx Narrowly Claims Mexico Victory",
+    "paragraph": "The JWRC category at Rally Mexico delivered a nail-biting finish as SubaruNyx secured a hard-fought victory with a total time of 00:55:32.708. In a tightly contested field, Flinnowaty trailed by just under four seconds to take second place, despite topping the final two stages and the Power Stage. Cefa217 completed the podium, over 50 seconds behind the leader. With two stage wins each, SubaruNyx, Flinnowaty, and Cefa217 dominated the pace throughout the six stages. Meanwhile, j0shM52 was the sole driver forced to retire early due to mechanical issues during the event.",
+    "angle": "Close finish",
+    "generatedAt": "2026-11-16T21:50:58.636Z",
+    "winner": "SubaruNyx",
     "podium": [
-      "scagliox01",
-      "E69Korrea",
-      "volos72"
+      "SubaruNyx",
+      "Flinnowaty",
+      "Cefa217"
     ]
   }
 }
