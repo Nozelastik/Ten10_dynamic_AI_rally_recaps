@@ -552,10 +552,16 @@ RULES:
 - Do not force an angle if the results do not support it.
 - You may use dry, understated motorsport humour.
 - Write in polished English.
+- All drivers in this championship are male.
+- Always use he/him/his when referring to an individual driver.
+- Never use singular they/them/their for an individual driver.
+- When referring to a team, use it/its.
+- When referring to multiple drivers, use they/their normally.
 - Keep the paragraph between 65 and 100 words.
 - Do not include markdown or HTML.
 - The headline must be original and concise.
 - Keep the storylines array factual and useful for future recaps.
+- When displaying total or stage times, write in "xx minutes xx.xx seconds", instead of 00:36:00.098
 
 Return ONLY valid JSON with this structure:
 {
