@@ -2,19 +2,19 @@
   "version": 1,
   "latest": {
     "season": "Season 5",
-    "round": "R5 Portugal",
-    "roundName": "Portugal",
-    "roundCode": "PO",
+    "round": "R7 Estonia",
+    "roundName": "Estonia",
+    "roundCode": "ES",
     "category": "WRC2",
-    "headline": "StoryVS_TTV Extends Unbeaten Run in Portugal",
-    "paragraph": "StoryVS_TTV continued their flawless start to Season 5 by securing victory at the Rally Portugal. Despite a 5000ms penalty on stage four, the Hyundai driver maintained control by winning seven of the eight stages to finish with an overall time of 01:00:25.317. GTI_1990 kept the pressure on throughout the event to secure second place, backed by a strong performance in the Power Stage. Meanwhile, Tuinboon27 demonstrated resilience, claiming victory in the final stage to bolster their points tally despite earlier time penalties, rounding out a challenging weekend for the WRC2 field.",
-    "angle": "Continued dominance",
-    "generatedAt": "2026-11-16T21:53:57.470Z",
-    "winner": "StoryVS_TTV",
+    "headline": "GTI_1990 Breaks the Streak in Estonia",
+    "paragraph": "After a season defined by the dominance of StoryVS_TTV, the narrative finally shifted at the Rally Estonia. GTI_1990 secured their first victory of the season, finishing with a total time of 00:34:50.933 in their Ford Fiesta Rally2. Despite StoryVS_TTV leading early with five stage wins, a time penalty on stage five derailed their campaign, allowing GTI_1990 to capitalize with three stage wins of their own. Janeman13 claimed second place, while speeedhunterr rounded out the podium. This result marks a significant turning point in the WRC2 category standings for Season 5.",
+    "angle": "First win of the season",
+    "generatedAt": "2026-11-16T21:54:39.098Z",
+    "winner": "GTI_1990",
     "podium": [
-      "StoryVS_TTV",
       "GTI_1990",
-      "Janeman13"
+      "Janeman13",
+      "speeedhunterr"
     ]
   }
 }

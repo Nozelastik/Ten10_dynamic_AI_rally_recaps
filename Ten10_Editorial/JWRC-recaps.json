@@ -2,19 +2,19 @@
   "version": 1,
   "latest": {
     "season": "Season 5",
-    "round": "R5 Portugal",
-    "roundName": "Portugal",
-    "roundCode": "PO",
+    "round": "R7 Estonia",
+    "roundName": "Estonia",
+    "roundCode": "ES",
     "category": "JWRC",
-    "headline": "SubaruNyx Commands Portugal with Six Stage Wins",
-    "paragraph": "SubaruNyx delivered a masterclass in Portugal, securing a dominant victory by winning six of the eight stages. Despite finishing fourth in the final stage, the overall performance was unmatched, resulting in a total time of 01:03:34.693 and 37 points. Cefa217 claimed second place and the Power Stage win, while scagliox01 rounded out the podium. This win marks the second victory of the season for SubaruNyx following their success in Mexico. The event saw five drivers record DNFs, highlighting the challenging nature of the Portuguese stages for the field.",
-    "angle": "Dominant win",
-    "generatedAt": "2026-11-16T21:54:00.302Z",
-    "winner": "SubaruNyx",
+    "headline": "scagliox01 Claims Estonia Victory",
+    "paragraph": "scagliox01 has triumphed in the Estonia round of the JWRC, finishing the eight-stage event with a total time of 00:36:35.839. Securing 39 total points, including four from the Power Stage, scagliox01 fended off a challenge from runner-up Flinnowaty, who finished 18.353 seconds behind. SubaruNyx rounded out the podium despite taking four stage wins throughout the event. With 26 drivers starting the rally, four drivers were recorded as DNF. This result strengthens scagliox01’s position in the career standings, building on previous performances in the season as the competition remains intense.",
+    "angle": "Consistency and points accumulation",
+    "generatedAt": "2026-11-16T21:54:44.201Z",
+    "winner": "scagliox01",
     "podium": [
-      "SubaruNyx",
-      "Cefa217",
-      "scagliox01"
+      "scagliox01",
+      "Flinnowaty",
+      "SubaruNyx"
     ]
   }
 }
