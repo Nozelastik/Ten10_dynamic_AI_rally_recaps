@@ -159,10 +159,18 @@ function encodeRepoPath(path) {
 }
 
 function rawUrl(path) {
+  const normalizedPath = normalizePath(path);
+
+  // Stage paths from index.json are relative to RESULTS_ROOT.
+  // The index itself already includes RESULTS_ROOT.
+  const fullPath = normalizedPath.startsWith(RESULTS_ROOT + "/")
+    ? normalizedPath
+    : `${RESULTS_ROOT}/${normalizedPath}`;
+
   return (
     `https://raw.githubusercontent.com/` +
     `${RESULTS_OWNER}/${RESULTS_REPO}/` +
-    `${RESULTS_BRANCH}/${encodeRepoPath(path)}`
+    `${RESULTS_BRANCH}/${encodeRepoPath(fullPath)}`
   );
 }
 
@@ -196,22 +204,39 @@ function collectJsonPaths(node, path = [], output = []) {
       );
     }
     return output;
+  }function collectJsonPaths(node, path = [], output = []) {
+  if (typeof node === "string") {
+    if (node.toLowerCase().endsWith(".json")) {
+      const candidate = node.startsWith(RESULTS_ROOT + "/")
+        ? node
+        : [...path, node].filter(Boolean).join("/");
+
+      output.push(candidate);
+    }
+
+    return output;
   }
 
   if (Array.isArray(node)) {
     node.forEach((value, index) => {
       collectJsonPaths(value, [...path, String(index)], output);
     });
+
     return output;
   }
 
   if (node && typeof node === "object") {
     for (const [key, value] of Object.entries(node)) {
-      if (typeof value === "string" &&
-          value.toLowerCase().endsWith(".json")) {
+      if (
+        typeof value === "string" &&
+        value.toLowerCase().endsWith(".json")
+      ) {
+        // In this index, the filename is both the key and the value.
+        // Use the key ONCE, not key + value.
         const candidate = value.startsWith(RESULTS_ROOT + "/")
           ? value
-          : [...path, key, value].filter(Boolean).join("/");
+          : [...path, key].filter(Boolean).join("/");
+
         output.push(candidate);
       } else {
         collectJsonPaths(value, [...path, key], output);
@@ -242,13 +267,13 @@ function findStageFiles(index, category) {
 
   return allPaths
     .filter(path => {
-      const p = path.toLowerCase();
+      const segments = path.toLowerCase().split("/");
 
       return (
-        p.includes(seasonPart) &&
-        p.includes(categoryPart) &&
-        p.includes(roundPart) &&
-        /stage[_-]?\d+.*\.json$/i.test(p)
+        segments.includes(seasonPart) &&
+        segments.includes(categoryPart) &&
+        segments.includes(roundPart) &&
+        /stage[_-]?\d+.*\.json$/i.test(path)
       );
     })
     .sort((a, b) => {
