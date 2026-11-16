@@ -561,7 +561,7 @@ RULES:
 - Do not include markdown or HTML.
 - The headline must be original and concise.
 - Keep the storylines array factual and useful for future recaps.
-- When displaying total or stage times, write in "xx minutes xx.xx seconds", instead of 00:36:00.098
+- When displaying total or stage times, write in "xx minutes xx.xxx seconds", instead of 00:36:00.098
 
 Return ONLY valid JSON with this structure:
 {
