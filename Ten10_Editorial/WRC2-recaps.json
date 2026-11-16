@@ -1,5 +1,20 @@
-
 {
   "version": 1,
-  "latest": null
+  "latest": {
+    "season": "Season 5",
+    "round": "R2 Sweden",
+    "roundName": "Sweden",
+    "roundCode": "SW",
+    "category": "WRC2",
+    "headline": "StoryVS_TTV Dominates Sweden with Masterclass Performance",
+    "paragraph": "StoryVS_TTV delivered an commanding performance in the WRC2 category at the Sweden event, securing a total of six stage wins out of ten. Finishing with a time of 00:42:23.385, they claimed the top spot on the podium and maximum points. GTI_1990 followed in second place with three stage wins, while Tuinboon27 rounded out the top three. The event saw consistent competition, although only Colesy3456 failed to complete the full distance, resulting in a DNF. StoryVS_TTV’s tactical consistency and pace proved insurmountable for the remainder of the field throughout the rally.",
+    "angle": "Dominant victory",
+    "generatedAt": "2026-11-16T21:49:59.818Z",
+    "winner": "StoryVS_TTV",
+    "podium": [
+      "StoryVS_TTV",
+      "GTI_1990",
+      "Tuinboon27"
+    ]
+  }
 }

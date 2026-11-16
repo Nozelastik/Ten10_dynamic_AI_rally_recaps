@@ -1,17 +1,661 @@
-
 {
   "version": 1,
-  "updatedAt": null,
+  "updatedAt": "2026-11-16T21:50:06.179Z",
   "categories": {
     "WRC2": {
-      "events": [],
-      "storylines": [],
-      "editorialHistory": []
+      "events": [
+        {
+          "season": "Season 5",
+          "folder": "R2 Sweden",
+          "round": "Sweden",
+          "roundCode": "SW",
+          "processedAt": "2026-11-16T21:49:59.818Z",
+          "winner": "StoryVS_TTV",
+          "podium": [
+            "StoryVS_TTV",
+            "GTI_1990",
+            "Tuinboon27"
+          ],
+          "stageCount": 10,
+          "standings": [
+            {
+              "driver": "StoryVS_TTV",
+              "position": 1,
+              "totalTime": "00:42:23.385",
+              "points": 30,
+              "mainPoints": 25,
+              "powerStagePoints": 5,
+              "stageWins": 6,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "GTI_1990",
+              "position": 2,
+              "totalTime": "00:42:37.605",
+              "points": 22,
+              "mainPoints": 18,
+              "powerStagePoints": 4,
+              "stageWins": 3,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "Tuinboon27",
+              "position": 3,
+              "totalTime": "00:43:10.518",
+              "points": 18,
+              "mainPoints": 15,
+              "powerStagePoints": 3,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "pr0Gamer346",
+              "position": 4,
+              "totalTime": "00:43:22.641",
+              "points": 14,
+              "mainPoints": 12,
+              "powerStagePoints": 2,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "Janeman13",
+              "position": 5,
+              "totalTime": "00:43:27.065",
+              "points": 11,
+              "mainPoints": 10,
+              "powerStagePoints": 1,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "Simonayy66",
+              "position": 6,
+              "totalTime": "00:43:54.001",
+              "points": 8,
+              "mainPoints": 8,
+              "powerStagePoints": 0,
+              "stageWins": 1,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "dannyram2025",
+              "position": 7,
+              "totalTime": "00:44:48.602",
+              "points": 6,
+              "mainPoints": 6,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "SirDracuIa",
+              "position": 8,
+              "totalTime": "00:44:56.791",
+              "points": 4,
+              "mainPoints": 4,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "speeedhunterr",
+              "position": 9,
+              "totalTime": "00:45:10.577",
+              "points": 2,
+              "mainPoints": 2,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "mk6pinnock",
+              "position": 10,
+              "totalTime": "00:45:54.297",
+              "points": 1,
+              "mainPoints": 1,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "stjuudents",
+              "position": 11,
+              "totalTime": "00:46:14.971",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "butlerbee3",
+              "position": 12,
+              "totalTime": "00:46:30.831",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "karutapja654",
+              "position": 13,
+              "totalTime": "00:46:46.989",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "WestQuma",
+              "position": 14,
+              "totalTime": "00:47:07.113",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "Schram45",
+              "position": 15,
+              "totalTime": "00:48:16.502",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "SWAD42",
+              "position": 16,
+              "totalTime": "00:49:43.965",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "Cruel971",
+              "position": 17,
+              "totalTime": "00:50:29.088",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "Macaroni-DogYT",
+              "position": 18,
+              "totalTime": "00:55:45.552",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "Colesy3456",
+              "position": 19,
+              "totalTime": "03:43:32.563",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 9,
+              "isDNF": true
+            }
+          ]
+        }
+      ],
+      "storylines": [
+        "StoryVS_TTV secured a dominant victory in Sweden with six stage wins.",
+        "GTI_1990 maintained a strong pace to secure second place overall.",
+        "Colesy3456 was the only driver to record a DNF in the WRC2 category."
+      ],
+      "editorialHistory": [
+        {
+          "season": "Season 5",
+          "round": "R2 Sweden",
+          "headline": "StoryVS_TTV Dominates Sweden with Masterclass Performance",
+          "angle": "Dominant victory",
+          "generatedAt": "2026-11-16T21:49:59.818Z"
+        }
+      ]
     },
     "JWRC": {
-      "events": [],
-      "storylines": [],
-      "editorialHistory": []
+      "events": [
+        {
+          "season": "Season 5",
+          "folder": "R2 Sweden",
+          "round": "Sweden",
+          "roundCode": "SW",
+          "processedAt": "2026-11-16T21:50:06.177Z",
+          "winner": "scagliox01",
+          "podium": [
+            "scagliox01",
+            "E69Korrea",
+            "volos72"
+          ],
+          "stageCount": 10,
+          "standings": [
+            {
+              "driver": "scagliox01",
+              "position": 1,
+              "totalTime": "00:45:30.821",
+              "points": 39,
+              "mainPoints": 35,
+              "powerStagePoints": 4,
+              "stageWins": 3,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "E69Korrea",
+              "position": 2,
+              "totalTime": "00:45:58.778",
+              "points": 28,
+              "mainPoints": 28,
+              "powerStagePoints": 0,
+              "stageWins": 1,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "volos72",
+              "position": 3,
+              "totalTime": "00:46:08.987",
+              "points": 30,
+              "mainPoints": 25,
+              "powerStagePoints": 5,
+              "stageWins": 2,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "anxvalodia",
+              "position": 4,
+              "totalTime": "00:46:35.097",
+              "points": 24,
+              "mainPoints": 22,
+              "powerStagePoints": 2,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "Cefa217",
+              "position": 5,
+              "totalTime": "00:46:45.153",
+              "points": 20,
+              "mainPoints": 20,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "Flinnowaty",
+              "position": 6,
+              "totalTime": "00:46:54.062",
+              "points": 19,
+              "mainPoints": 18,
+              "powerStagePoints": 1,
+              "stageWins": 2,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "SubaruNyx",
+              "position": 7,
+              "totalTime": "00:47:04.723",
+              "points": 16,
+              "mainPoints": 16,
+              "powerStagePoints": 0,
+              "stageWins": 2,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "ronnieclay15",
+              "position": 8,
+              "totalTime": "00:47:54.057",
+              "points": 14,
+              "mainPoints": 14,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "xGHOST4x",
+              "position": 9,
+              "totalTime": "00:48:07.370",
+              "points": 12,
+              "mainPoints": 12,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "Leclunk-33",
+              "position": 10,
+              "totalTime": "00:48:22.108",
+              "points": 11,
+              "mainPoints": 11,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "chrism1010",
+              "position": 11,
+              "totalTime": "00:48:34.983",
+              "points": 10,
+              "mainPoints": 10,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "ppoole828",
+              "position": 12,
+              "totalTime": "00:48:45.599",
+              "points": 9,
+              "mainPoints": 9,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "acollador98",
+              "position": 13,
+              "totalTime": "00:49:36.084",
+              "points": 8,
+              "mainPoints": 8,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "The_Ghost1309",
+              "position": 14,
+              "totalTime": "00:50:14.100",
+              "points": 7,
+              "mainPoints": 7,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "Rulzlana",
+              "position": 15,
+              "totalTime": "00:50:36.691",
+              "points": 6,
+              "mainPoints": 6,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "nwsmith89",
+              "position": 16,
+              "totalTime": "00:51:05.219",
+              "points": 8,
+              "mainPoints": 5,
+              "powerStagePoints": 3,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "LordAltgard",
+              "position": 17,
+              "totalTime": "00:51:09.154",
+              "points": 4,
+              "mainPoints": 4,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "Dowgzilla",
+              "position": 18,
+              "totalTime": "00:51:17.382",
+              "points": 3,
+              "mainPoints": 3,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "spiltrock",
+              "position": 19,
+              "totalTime": "00:51:29.180",
+              "points": 2,
+              "mainPoints": 2,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "MorhysVonToto",
+              "position": 20,
+              "totalTime": "00:51:31.050",
+              "points": 1,
+              "mainPoints": 1,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "Gonzaseca",
+              "position": 21,
+              "totalTime": "00:51:48.290",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "SirHames93",
+              "position": 22,
+              "totalTime": "00:51:52.271",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "icedriver220",
+              "position": 23,
+              "totalTime": "00:52:15.334",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "samgaleffi",
+              "position": 24,
+              "totalTime": "00:52:17.288",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "SticknBerrys",
+              "position": 25,
+              "totalTime": "00:52:35.060",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "j0shM52",
+              "position": 26,
+              "totalTime": "00:53:54.945",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "WRC Player",
+              "position": 27,
+              "totalTime": "00:53:55.606",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "Henrey_2004",
+              "position": 28,
+              "totalTime": "00:53:55.936",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "Nightram15",
+              "position": 29,
+              "totalTime": "00:57:48.526",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 0,
+              "missingStages": 0,
+              "isDNF": false
+            },
+            {
+              "driver": "novagsi20",
+              "position": 30,
+              "totalTime": "01:02:32.122",
+              "points": 0,
+              "mainPoints": 0,
+              "powerStagePoints": 0,
+              "stageWins": 0,
+              "dnfStages": 1,
+              "missingStages": 0,
+              "isDNF": true
+            }
+          ]
+        }
+      ],
+      "storylines": [
+        "scagliox01 takes control of the JWRC event with a high-scoring weekend",
+        "novagsi20 is the sole DNF recorded in the Sweden rally"
+      ],
+      "editorialHistory": [
+        {
+          "season": "Season 5",
+          "round": "R2 Sweden",
+          "headline": "scagliox01 Claims Dominant Victory in Sweden",
+          "angle": "Dominant victory",
+          "generatedAt": "2026-11-16T21:50:06.177Z"
+        }
+      ]
     }
   }
 }

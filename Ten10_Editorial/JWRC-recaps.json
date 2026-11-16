@@ -1,5 +1,20 @@
-
 {
   "version": 1,
-  "latest": null
+  "latest": {
+    "season": "Season 5",
+    "round": "R2 Sweden",
+    "roundName": "Sweden",
+    "roundCode": "SW",
+    "category": "JWRC",
+    "headline": "scagliox01 Claims Dominant Victory in Sweden",
+    "paragraph": "scagliox01 secured a commanding victory at the Sweden rally, finishing the ten-stage event with a total time of 00:45:30.821. Dominating the field with three stage wins, scagliox01 accrued 39 points in total, including 4 points from the final power stage. E69Korrea maintained consistency to secure second place, while volos72 rounded out the podium. Despite volos72 taking the maximum 5 points on the power stage, scagliox01 held a clear advantage throughout the weekend. The rally saw 30 entries, with novagsi20 being the only driver recorded with a DNF during the event.",
+    "angle": "Dominant victory",
+    "generatedAt": "2026-11-16T21:50:06.177Z",
+    "winner": "scagliox01",
+    "podium": [
+      "scagliox01",
+      "E69Korrea",
+      "volos72"
+    ]
+  }
 }
