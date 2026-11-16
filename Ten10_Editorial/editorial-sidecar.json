@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-11-16T21:54:44.203Z",
+  "updatedAt": "2026-11-16T21:57:43.104Z",
   "categories": {
     "WRC2": {
       "events": [
@@ -949,7 +949,7 @@
           "folder": "R7 Estonia",
           "round": "Estonia",
           "roundCode": "ES",
-          "processedAt": "2026-11-16T21:54:39.098Z",
+          "processedAt": "2026-11-16T21:57:40.732Z",
           "winner": "GTI_1990",
           "podium": [
             "GTI_1990",
@@ -1184,6 +1184,13 @@
           "headline": "GTI_1990 Breaks the Streak in Estonia",
           "angle": "First win of the season",
           "generatedAt": "2026-11-16T21:54:39.098Z"
+        },
+        {
+          "season": "Season 5",
+          "round": "R7 Estonia",
+          "headline": "GTI_1990 Breaks The Streak in Estonia",
+          "angle": "First win of the season",
+          "generatedAt": "2026-11-16T21:57:40.732Z"
         }
       ]
     },
@@ -2662,7 +2669,7 @@
           "folder": "R7 Estonia",
           "round": "Estonia",
           "roundCode": "ES",
-          "processedAt": "2026-11-16T21:54:44.202Z",
+          "processedAt": "2026-11-16T21:57:43.102Z",
           "winner": "scagliox01",
           "podium": [
             "scagliox01",
@@ -2987,6 +2994,10 @@
         }
       ],
       "storylines": [
+        "scagliox01 increases their career wins to three after Estonia success",
+        "SubaruNyx remains in title contention with four stage wins in Estonia",
+        "Cefa217 demonstrates speed with a Power Stage win despite a DNF",
+        "Flinnowaty moves to 138 career points with a second-place finish",
         "scagliox01 secures victory in Estonia with 39 points",
         "Flinnowaty finishes second in Estonia to maintain career points momentum",
         "SubaruNyx claims the final podium spot despite four stage wins",
@@ -3039,6 +3050,13 @@
           "headline": "scagliox01 Claims Estonia Victory",
           "angle": "Consistency and points accumulation",
           "generatedAt": "2026-11-16T21:54:44.201Z"
+        },
+        {
+          "season": "Season 5",
+          "round": "R7 Estonia",
+          "headline": "scagliox01 Claims Estonia Victory with Tactical Consistency",
+          "angle": "Consistency and points accumulation",
+          "generatedAt": "2026-11-16T21:57:43.102Z"
         }
       ]
     }
