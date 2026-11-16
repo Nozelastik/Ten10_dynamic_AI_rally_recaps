@@ -1,0 +1,64 @@
+
+name: Generate Ten10 AI Rally Recaps
+
+on:
+  workflow_dispatch:
+    inputs:
+      season:
+        description: "Season folder (example: Season 5)"
+        required: true
+        default: "Season 5"
+        type: string
+
+      round:
+        description: "Exact event folder (example: R3 Mexico)"
+        required: true
+        type: string
+
+      force:
+        description: "Regenerate even if this rally was already processed"
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ten10-editorial-generation
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout editorial repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Generate WRC2 and JWRC recaps
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TEN10_SEASON: ${{ inputs.season }}
+          TEN10_ROUND: ${{ inputs.round }}
+          TEN10_FORCE: ${{ inputs.force }}
+        run: node scripts/generate-editorial-recaps.mjs
+
+      - name: Commit generated editorial files
+        run: |
+          git config user.name "Ten10 AI Editorial"
+          git config user.email "actions@users.noreply.github.com"
+
+          git add Ten10_Editorial/
+
+          if git diff --cached --quiet; then
+            echo "No editorial changes to commit."
+          else
+            git commit -m "Generate AI rally recaps: ${{ inputs.season }} / ${{ inputs.round }}"
+            git push
+          fi
