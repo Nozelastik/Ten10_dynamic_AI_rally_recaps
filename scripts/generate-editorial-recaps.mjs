@@ -158,11 +158,18 @@ function encodeRepoPath(path) {
     .join("/");
 }
 
+function normalizePath(path) {
+  return String(path)
+    .replaceAll("\\", "/")
+    .replace(/^\/+/, "")
+    .replaceAll("//", "/");
+}
+
 function rawUrl(path) {
   const normalizedPath = normalizePath(path);
 
-  // Stage paths from index.json are relative to RESULTS_ROOT.
-  // The index itself already includes RESULTS_ROOT.
+  // Stage paths from index.json may already include RESULTS_ROOT.
+  // Add the prefix only when it is not already present.
   const fullPath = normalizedPath.startsWith(RESULTS_ROOT + "/")
     ? normalizedPath
     : `${RESULTS_ROOT}/${normalizedPath}`;
@@ -192,19 +199,18 @@ async function fetchJson(url) {
 }
 
 /*
- * The existing index is nested by season/category/event.
- * This walker also supports arrays and string-valued file entries.
+ * Walk the existing index and collect stage JSON paths.
+ *
+ * Supports:
+ * - Nested objects
+ * - Arrays
+ * - String-valued file entries
+ * - Objects where the filename is both the key and value
+ *
+ * Important:
+ * When the filename is both key and value, use it only once.
  */
 function collectJsonPaths(node, path = [], output = []) {
-  if (typeof node === "string") {
-    if (node.toLowerCase().endsWith(".json")) {
-      output.push(node.startsWith(RESULTS_ROOT + "/")
-        ? node
-        : [...path, node].filter(Boolean).join("/")
-      );
-    }
-    return output;
-  }function collectJsonPaths(node, path = [], output = []) {
   if (typeof node === "string") {
     if (node.toLowerCase().endsWith(".json")) {
       const candidate = node.startsWith(RESULTS_ROOT + "/")
@@ -231,8 +237,6 @@ function collectJsonPaths(node, path = [], output = []) {
         typeof value === "string" &&
         value.toLowerCase().endsWith(".json")
       ) {
-        // In this index, the filename is both the key and the value.
-        // Use the key ONCE, not key + value.
         const candidate = value.startsWith(RESULTS_ROOT + "/")
           ? value
           : [...path, key].filter(Boolean).join("/");
@@ -245,13 +249,6 @@ function collectJsonPaths(node, path = [], output = []) {
   }
 
   return output;
-}
-
-function normalizePath(path) {
-  return String(path)
-    .replaceAll("\\", "/")
-    .replace(/^\/+/, "")
-    .replaceAll("//", "/");
 }
 
 function findStageFiles(index, category) {
@@ -390,7 +387,6 @@ function calculateEvent(category, stages) {
   }
 
   const orderedStageNumbers = stages.map(stage => stage.number);
-  const firstStage = orderedStageNumbers[0];
 
   for (const driver of drivers.values()) {
     const startedStages = new Set(
@@ -442,7 +438,7 @@ function calculateEvent(category, stages) {
     points: POWER_STAGE_POINTS[index] || 0
   })).filter(row => row.points > 0);
 
-  const pointsTable = MAIN_POINTS.map((points, index) => ({
+  const pointsTable = MAIN_POINTS[category].map((points, index) => ({
     position: index + 1,
     points
   }));
