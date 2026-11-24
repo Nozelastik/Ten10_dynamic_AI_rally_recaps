@@ -561,7 +561,9 @@ RULES:
 - Do not include markdown or HTML.
 - The headline must be original and concise.
 - Keep the storylines array factual and useful for future recaps.
-- When displaying total or stage times, write in "xx minutes xx.xxx seconds", instead of 00:36:00.098
+- If driver names end with numbers or special characters, only display the name (ex: "GTI_1990" would only display as "GTI", and "Cefa_" as "Cefa").
+- Don't always highlight the winner. You can add information about drivers that get their first points, first podiums, that are consistent (ex: 5th time being 2nd this season, always in the top 5, etc.).
+- When displaying total or stage times, write in "xx minutes xx seconds", instead of 00:36:00.098, unless the difference between two drivers is highlighted AND less than 1 second, then display xx.xxx seconds, with 3 decimals.
 
 Return ONLY valid JSON with this structure:
 {
