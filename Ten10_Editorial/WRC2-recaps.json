@@ -2,19 +2,19 @@
   "version": 1,
   "latest": {
     "season": "Season 5",
-    "round": "R7 Estonia",
-    "roundName": "Estonia",
-    "roundCode": "ES",
+    "round": "R8 Greece",
+    "roundName": "Greece",
+    "roundCode": "GR",
     "category": "WRC2",
-    "headline": "GTI_1990 Breaks Through with Maiden Season 5 Victory in Estonia",
-    "paragraph": "The WRC2 landscape shifted in Estonia as GTI_1990 finally captured his first victory of Season 5, ending the lengthy winning streak of his rival. Despite StoryVS_TTV setting the pace with five stage wins, a costly time penalty on stage five dropped him to eighth in the final standings. GTI_1990 capitalized on this consistency, completing the rally in 34 minutes 50.93 seconds to lead Janeman13 and speeedhunterr onto the podium. While StoryVS_TTV salvaged five points from the Power Stage, GTI_1990 remains the primary challenger as the championship battle intensifies.",
-    "angle": "First win of the season",
-    "generatedAt": "2026-11-16T22:03:24.545Z",
-    "winner": "GTI_1990",
+    "headline": "StoryVS_TTV Returns to Dominant Form in Greece",
+    "paragraph": "StoryVS_TTV demonstrated his absolute mastery of the gravel in Greece, delivering a perfect performance by winning every single one of the six scheduled stages. He completed the rally in 49 minutes 20.369 seconds, comfortably outpacing his rivals to secure a maximum points haul of 30. GTI_1990 maintained his season-long consistency by claiming second place, while Simonayy66 rounded out the podium. The demanding Greek stages proved difficult for several competitors, with five drivers, including SWAD42 and stjuudents, failing to finish the full rally distance after suffering stage-related incidents.",
+    "angle": "Dominant sweep",
+    "generatedAt": "2026-11-24T15:58:14.539Z",
+    "winner": "StoryVS_TTV",
     "podium": [
+      "StoryVS_TTV",
       "GTI_1990",
-      "Janeman13",
-      "speeedhunterr"
+      "Simonayy66"
     ]
   }
 }

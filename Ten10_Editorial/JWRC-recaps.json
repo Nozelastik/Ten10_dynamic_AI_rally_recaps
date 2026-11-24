@@ -2,19 +2,19 @@
   "version": 1,
   "latest": {
     "season": "Season 5",
-    "round": "R7 Estonia",
-    "roundName": "Estonia",
-    "roundCode": "ES",
+    "round": "R8 Greece",
+    "roundName": "Greece",
+    "roundCode": "GR",
     "category": "JWRC",
-    "headline": "scagliox01 Claims Victory in Estonian Thriller",
-    "paragraph": "scagliox01 secured his third win of the season in Estonia, finishing with a total time of 36 minutes 35.84 seconds. While SubaruNyx demonstrated remarkable pace by clinching four stage wins, a series of penalties dropped him to third place. Flinnowaty maintained his consistent form to secure second, finishing 18.35 seconds behind the leader. Despite recording a DNF, Cefa217 showcased his speed by winning the Power Stage. The field faced a challenging event with four drivers failing to finish, as the championship battle continues to intensify following this high-scoring weekend for scagliox01.",
-    "angle": "Consistency versus raw pace",
-    "generatedAt": "2026-11-16T22:03:30.519Z",
-    "winner": "scagliox01",
+    "headline": "E69Korrea Claims Breakthrough Maiden Victory in Greece",
+    "paragraph": "E69Korrea secured his first win of the season at the Greece rally, finishing with a total time of 52 minutes 31.163 seconds. He showcased impressive consistency, claiming two stage wins and accumulating 39 total points. SubaruNyx finished in second place, trailing by 17.672 seconds, while Flinnowaty rounded out the podium. The event proved challenging for the field, as twelve drivers recorded at least one DNF. Despite the high attrition rate, E69Korrea maintained his pace throughout the six stages to climb the standings and solidify his position in the championship.",
+    "angle": "First win within the tracked period",
+    "generatedAt": "2026-11-24T15:58:23.968Z",
+    "winner": "E69Korrea",
     "podium": [
-      "scagliox01",
-      "Flinnowaty",
-      "SubaruNyx"
+      "E69Korrea",
+      "SubaruNyx",
+      "Flinnowaty"
     ]
   }
 }
