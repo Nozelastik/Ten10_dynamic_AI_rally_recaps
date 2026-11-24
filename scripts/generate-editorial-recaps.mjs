@@ -574,74 +574,156 @@ Return ONLY valid JSON with this structure:
 `;
 }
 
+
 async function generateArticle(category, round, result, context) {
   assert(GEMINI_API_KEY, "Missing GEMINI_API_KEY secret.");
 
-  const endpoint =
-    `https://generativelanguage.googleapis.com/v1beta/models/` +
-    `${GEMINI_MODEL}:generateContent`;
+  const primaryModel = GEMINI_MODEL;
+  const fallbackModel = process.env.GEMINI_FALLBACK_MODEL || "";
 
-  const response = await fetch(endpoint, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "x-goog-api-key": GEMINI_API_KEY
-    },
-    body: JSON.stringify({
-      contents: [{
-        parts: [{
-          text: buildPrompt(category, round, result, context)
-        }]
-      }],
-      generationConfig: {
-        temperature: 0.85,
-        responseMimeType: "application/json"
+  const models = [
+    primaryModel,
+    ...(fallbackModel && fallbackModel !== primaryModel
+      ? [fallbackModel]
+      : [])
+  ];
+
+  const retryableStatuses = [408, 429, 500, 502, 503, 504];
+  const maxAttempts = 5;
+
+  async function requestWithRetry(model) {
+    const endpoint =
+      `https://generativelanguage.googleapis.com/v1beta/models/` +
+      `${model}:generateContent`;
+
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+      try {
+        console.log(
+          `${category}: Gemini model ${model}, attempt ${attempt}/${maxAttempts}`
+        );
+
+        const response = await fetch(endpoint, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-goog-api-key": GEMINI_API_KEY
+          },
+          body: JSON.stringify({
+            contents: [{
+              parts: [{
+                text: buildPrompt(category, round, result, context)
+              }]
+            }],
+            generationConfig: {
+              temperature: 0.85,
+              responseMimeType: "application/json"
+            }
+          })
+        });
+
+        const responseText = await response.text();
+
+        let payload;
+
+        try {
+          payload = JSON.parse(responseText);
+        } catch {
+          payload = { error: { message: responseText } };
+        }
+
+        if (!response.ok) {
+          const error = new Error(
+            `Gemini API error ${response.status}: ` +
+            JSON.stringify(payload)
+          );
+
+          error.status = response.status;
+          throw error;
+        }
+
+        const generatedText = payload.candidates?.[0]?.content?.parts
+          ?.map(part => part.text || "")
+          .join("")
+          .trim();
+
+        assert(
+          generatedText,
+          `Gemini returned an empty response for ${category}.`
+        );
+
+        const article = JSON.parse(generatedText);
+
+        assert(article.headline, "Gemini article has no headline.");
+        assert(article.paragraph, "Gemini article has no paragraph.");
+        assert(article.angle, "Gemini article has no editorial angle.");
+
+        const words = article.paragraph.trim().split(/\s+/);
+
+        if (words.length > 100) {
+          article.paragraph = words.slice(0, 100).join(" ")
+            .replace(/[\s,;:—-]+$/, "") + ".";
+        }
+
+        return {
+          category,
+          headline: safeText(article.headline),
+          paragraph: safeText(article.paragraph),
+          angle: safeText(article.angle),
+          storylines: Array.isArray(article.storylines)
+            ? article.storylines.map(safeText).filter(Boolean).slice(0, 5)
+            : [],
+          factsUsed: Array.isArray(article.factsUsed)
+            ? article.factsUsed.map(safeText).filter(Boolean).slice(0, 8)
+            : [],
+          generatedAt: new Date().toISOString()
+        };
+
+      } catch (error) {
+        const retryable = retryableStatuses.includes(error.status);
+
+        if (!retryable || attempt === maxAttempts) {
+          throw error;
+        }
+
+        const delay = Math.min(5000 * (2 ** (attempt - 1)), 60000);
+
+        console.warn(
+          `${category}: Gemini returned a temporary error. ` +
+          `Retrying in ${delay / 1000} seconds...`
+        );
+
+        await new Promise(resolve => setTimeout(resolve, delay));
       }
-    })
-  });
-
-  const payload = await response.json();
-
-  if (!response.ok) {
-    throw new Error(
-      `Gemini API error ${response.status}: ` +
-      JSON.stringify(payload)
-    );
+    }
   }
 
-  const text = payload.candidates?.[0]?.content?.parts
-    ?.map(part => part.text || "")
-    .join("")
-    .trim();
+  let lastError;
 
-  assert(text, `Gemini returned an empty response for ${category}.`);
+  for (let i = 0; i < models.length; i++) {
+    const model = models[i];
 
-  const article = JSON.parse(text);
+    try {
+      if (i > 0) {
+        console.warn(
+          `${category}: Primary model unavailable. ` +
+          `Switching to fallback model ${model}.`
+        );
+      }
 
-  assert(article.headline, "Gemini article has no headline.");
-  assert(article.paragraph, "Gemini article has no paragraph.");
-  assert(article.angle, "Gemini article has no editorial angle.");
+      return await requestWithRetry(model);
 
-  const words = article.paragraph.trim().split(/\s+/);
+    } catch (error) {
+      lastError = error;
 
-  if (words.length > 100) {
-    article.paragraph = words.slice(0, 100).join(" ")
-      .replace(/[\s,;:—-]+$/, "") + ".";
+      if (i < models.length - 1) {
+        console.warn(
+          `${category}: Model ${model} failed. Trying fallback.`
+        );
+      }
+    }
   }
 
-  return {
-    category,
-    headline: safeText(article.headline),
-    paragraph: safeText(article.paragraph),
-    angle: safeText(article.angle),
-    storylines: Array.isArray(article.storylines)
-      ? article.storylines.map(safeText).filter(Boolean).slice(0, 5)
-      : [],
-    factsUsed: Array.isArray(article.factsUsed)
-      ? article.factsUsed.map(safeText).filter(Boolean).slice(0, 8)
-      : [],
-    generatedAt: new Date().toISOString()
-  };
+  throw lastError;
 }
 
 async function readSidecar() {
